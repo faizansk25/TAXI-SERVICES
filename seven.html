@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nagarsulacarride - Local Car Service</title>
+  <link rel="stylesheet" href="eight.css">
+  
+  <!-- Link to Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    /* Additional styles */
+    .flex2 {
+      background-image: url('pic.jpg');
+      background-size: cover;
+      background-position: center;
+      min-height: 400px;
+      display: flex;
+      justify-content: center;
+      padding: 6rem 0;
+    }
+  </style>
+</head>
+<body class="bg-background dark:bg-black">
+
+<div class="flex flex-col min-h-screen">
+  <header class="bg-primary py-4 px-6 flex justify-between items-center shadow-lg">
+    <h1 class="text-primary-foreground text-2xl font-bold">Nagarsulacarride</h1>
+    <nav>
+      <ul class="flex space-x-4">
+        <li>
+          <a href="#" class="text-primary-foreground hover:text-primary-foreground/80"> Home </a>
+        </li>
+        <li>
+          <a href="#" class="text-primary-foreground hover:text-primary-foreground/80"> About </a>
+        </li>
+        <li>
+          <a href="#" class="text-primary-foreground hover:text-primary-foreground/80"> Contact </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <section class="hero">
+    <div class="p-6 text-white">
+      <h2 class="text-4xl font-extrabold mb-4">Welcome To Nagarsulacarride</h2>
+      <p class="text-lg">Local Car Service | Travel at One Site | Sight Seen | Affordable Rates | Easy Booking | Hotel Recommendations</p>
+    </div>
+  </section>
+  <div class="flex2 justify-center p-6 space-x-6">
+    <div class="max-w-md card">
+      <h3 class="text-xl font-bold text-primary mb-4">Our Services</h3>
+      <ul class="space-y-2">
+        <li class="text-primary-foreground">1. Nagarsula Car Ride, As a local car rental service in Nagarsol. Our intimate knowledge of the area allows us to provide you with a comfortable, safe, and efficient ride to your destination.</li>
+        <li class="text-primary-foreground">2. We specialize in one-way travel from Nagarsol to Shirdi and Manmad to Shirdi. We specialize in hassle-free one-way travel, ensuring your journey is smooth and efficient</li>
+        <li class="text-primary-foreground">3. Our services extend beyond Shirdi to nearby attractions such as Trimbakeshwar, Nashik, Ajanta Ellora Caves, and many more, and their surrounding areas, where your comfort and satisfaction are our priorities.</li>
+        <li class="text-primary-foreground">4. We provide competitive and transparent pricing tailored to meet your needs. Our offerable rates ensure you receive excellent value without compromising on service quality. Contact us for specific pricing details or special promotions.</li>
+        <li class="text-primary-foreground">5. For easy booking, we offer a user-friendly online platform and dedicated customer support. You can quickly schedule services, manage appointments, and receive instant confirmations.</li>
+        <li class="text-primary-foreground">6. Additionally, we provide personalized hotel recommendations in Shirdi, tailored to enhance your stay and ensure a stress-free visit. in Shirdi, tailored to enhance your stay and ensure a stress-free visit</li>
+      </ul>
+    </div>
+    <div class="max-w-md card">
+      <h3 class="text-xl font-bold text-primary mb-4">Contact Us</h3>
+      <form id="main-form" method="post" action="https://script.google.com/macros/s/AKfycbx-0c286_Ocmp2IHePYRSbaTjoFkjvmCWkW_OBHTrkvg7c7zzw2iBv6BX7CaHgcxnET/exec">
+        <input type="text" placeholder="First Name" class="form-input" name="First name" />
+        <input type="text" placeholder="Last Name" class="form-input" name="Last name" />
+        <input type="tel" placeholder="Phone No." class="form-input" name="phone"/>
+        <input type="text" placeholder="Pickup Location" class="form-input" name="pickup"/>
+        <input type="text" placeholder="Drop Location" class="form-input" name="destination"/>
+        <input type="date" placeholder="Date" class="form-input" name="date"/>
+        <textarea placeholder="Message" class="form-textarea" name="comment"></textarea>
+        <button type="submit" class="form-button">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script>
+  const form = document.getElementById('main-form');
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+    const url = form.action;
+    const params = {
+      method: 'POST',
+      body: formData
+    };
+
+    try {
+      const response = await fetch(url, params);
+      if (response.ok) {
+        alert('Your message has been sent successfully!');
+        form.reset();
+      } else {
+        alert('There was a problem submitting your form. Please try again.');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      alert('There was a problem submitting your form. Please try again.');
+    }
+  });
+</script>
+
+</body>
+</html>

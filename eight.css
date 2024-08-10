@@ -1,0 +1,191 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .bg-background {
+    background-color: #f0f0f0;
+  }
+  
+  .bg-primary {
+    background-color: rgb(83, 82, 82);
+  }
+  
+  .text-primary-foreground {
+    color: #fff;
+  }
+  
+  .bg-card {
+    background-color: #fff;
+  }
+  
+  .text-primary {
+    color: #4CAF50;
+  }
+  
+  .border-input {
+    border-color: #ccc;
+  }
+  
+  .hover\:bg-primary\/80:hover {
+    background-color: rgba(76, 175, 80, 0.8);
+  }
+  
+  /* Hero section styles */
+  .hero {
+    background-image: url("image-1200x400.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 400px; /* Adjust as needed */
+    color: white;/* Text color */
+    text-align: center; /* Center align text */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px;
+  }
+  .text-4xl {
+    color: darkorchid
+  }
+  .text-lg {
+    color: darkorchid
+  }
+  
+  .hero h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  /* Services and Contact section styles */
+  .max-w-md {
+    max-width: 50%; /* Adjust as needed */
+  }
+  
+  .card {
+    background-color:rgb(91, 91, 91);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Align text left */
+  }
+  
+  .card h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #fff; /* Text color */
+  }
+  
+  .card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: #fff; /* Text color */
+  }
+  
+  .card li {
+    margin-bottom: 1rem;
+    color: #fff; /* Text color */
+  }
+  
+  .form-input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+  
+  .form-textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    height: 100px; /* Adjust textarea height */
+  }
+  
+  .form-button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .form-button:hover {
+    background-color: rgba(76, 175, 80, 0.8);
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .hero {
+      padding: 60px 20px; /* Adjusted padding for smaller screens */
+    }
+  
+    .hero h2 {
+      font-size: 2.5rem; /* Adjusted font size */
+    }
+  
+    .hero p {
+      font-size: 1.25rem; /* Adjusted font size */
+      margin-bottom: 1.5rem; /* Increased margin bottom */
+    }
+  
+    .max-w-md {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+  
+    .card {
+      padding: 1rem; /* Reduced padding for smaller cards */
+    }
+  
+    .card h3 {
+      font-size: 1.25rem; /* Adjusted font size */
+      margin-bottom: 0.75rem; /* Reduced margin bottom */
+    }
+  
+    .card li {
+      margin-bottom: 0.75rem; /* Reduced margin bottom */
+    }
+  
+    .form-input,
+    .form-textarea {
+      font-size: 0.875rem; /* Smaller font size for inputs */
+    }
+  
+    .form-textarea {
+      height: 80px; /* Adjusted textarea height */
+    }
+  
+    .form-button {
+      padding: 0.75rem 1rem;
+    }
+    
+    .flex2 {
+      background-image: url("E:\startup\pic.jpg");
+      background-size: cover;
+      background-position: center;
+      min-height: 300px; /* Reduced height for smaller screens */
+      display: flex;
+      justify-content: center;
+      padding: 4rem 0; /* Adjusted padding for smaller screens */
+    }
+  }
+  
+  
